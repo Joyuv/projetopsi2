@@ -5,3 +5,7 @@
 - Passo 3: Ativar o env `env\Scripts\activate` no windows e `source env/bin/activate` no linux
 - Passo 4: Instalar dependencias `pip install -r requirements.txt`
 - Passo 5: Rodar o código `flask run --debug`
+
+# Integrantes
+
+- Givanilson Geferson Fernandes Mariz
