@@ -6,10 +6,13 @@ titulo_header %}Produtos{% endblock %} {% block main %}
     <div class="card-body">
       <h5 class="card-title">{{ produto.nome }}</h5>
       <p class="card-text">{{ produto.descricao }}</p>
-      <a href="#" class="btn btn-primary">Acessar</a>
+      <a href="{{url_for('edit', pro_id=produto.id) }}"><button class="btn btn-primary">editar</button></a>
+      <a href="{{url_for('remove', pro_id=produto.id) }}"><button class="btn btn-primary">remover</button></a>
     </div>
     <div class="card-footer text-muted">{{ produto.preco }}</div>
   </div>
   {% endfor %}
 </div>
+<a href="{{url_for('add')}}"><button class="btn btn-primary">adicionar</button></a>
 {% endblock %}
+
